@@ -1,98 +1,91 @@
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh; /* Ensure full viewport height */
-}
+    margin: 0;
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  .top-nav {
+    background-color: black;
+    color: white;
+    padding: 10px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 5px; /* Reduced padding */
+    margin-left: auto;
+  }
+  .top-nav a:hover {
+    color: red;
+  }
+  .top-nav h1 {
+    font-size: 20px;
+    margin: 0;
+  }
 
-/* Top navigation */
-.top-nav {
-  background-color: black;
-  color: white;
-  padding: 10px; /* Adjust padding for responsiveness */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+  .main-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Margin for spacing */
+  }
+  
+  .main-image-container h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #333; /* Adjust color */
+  }
+  
+  .main-image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make profile image circular */
+    margin-top: 20px; /* Space between text and image */
+  }
+  
 
-.top-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 3px 5px; /* Reduced padding */
-  margin-left: auto;
-}
+  .link-images {
+    display: flex; /* Arrange link images horizontally */
+    justify-content: space-between; /* Distribute evenly */
+    margin-top: 20px; /* Space between main image and link images */
+  }
 
-.top-nav a:hover {
-  color: red;
-}
+  .link-images img {
+    width: 50px; /* Adjust link image size as needed */
+    cursor: pointer; /* Indicate they are clickable */
+    gap: 10px 10px;
+  }
 
-.top-nav h1 {
-  font-size: 1.5rem; /* Use relative units for responsiveness */
-  margin: 0;
-}
+  .link:hover {
+    color: red;
+  }
 
-/* Main image container */
-.main-image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 20px auto; /* Adjust margin for responsiveness */
-}
 
-.main-image-container h2 {
-  font-size: 2rem; /* Use relative units for responsiveness */
-  margin: 0;
-  color: #333; /* Adjust color */
-}
+  .info{
+      margin: 0;
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+    ;
+  }
 
-.main-image-container img {
-  width: 20vw; /* Use viewport units for responsiveness */
-  border-radius: 50%; /* Make profile image circular */
-  margin-top: 20px; /* Space between text and image */
-}
-
-/* Link images */
-.link-images {
-  display: flex; /* Arrange link images horizontally */
-  justify-content: space-between; /* Distribute evenly */
-  margin-top: 20px; /* Space between main image and link images */
-}
-
-.link-images img {
-  width: 5vw; /* Use viewport units for responsiveness */
-  height: auto; /* Maintain aspect ratio */
-  cursor: pointer; /* Indicate they are clickable */
- gap: 2px;
-}
-
-.link-images img:hover {
-  opacity: 0.8; /* Subtle hover effect */
-}
-
-/* Info section */
-.info {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Remove `min-height` to allow other sections to grow */
-}
-
-/* Table blocks */
-.table-block {
+  .table-block {
   border: 1px solid black;
+  padding: 150px;
   background-color: #f2f2f2;
   text-align: center;
   transition: all 0.5s;
   cursor: pointer;
-  padding: 20px; /* Adjust padding for responsiveness */
-  max-width: 80vw; /* Set a maximum width for responsiveness */
-  margin: 0 auto; /* Center horizontally */
+  
 }
 
 .table-block:hover {
@@ -100,43 +93,56 @@ body {
   background-color: #ddd;
 }
 
-/* Bottom navigation */
-.bottom-nav {
-  background-color: black;
-  color: white;
-  padding: 10px; /* Adjust padding for responsiveness */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+
+  .bottom-nav {
+    background-color: black;
+    color: white;
+    padding: 10px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .bottom-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 5px; /* Reduced padding */
+    margin-left: auto
+    ;
+  }
+  .top-nav a:hover {
+    color: red;
+  }
+  .top-nav h1 {
+    font-size: 20px;
+    margin: 0;
+    float: left;
+  }
+
+  .table-block {
+text-align: center;
+/* Additional styling for spacing, padding, etc. as needed */
 }
 
-.bottom-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 3px 5px; /* Reduced padding */
-  margin-left: auto;
-}
+.table-block img {
+  /* Center images within the table block */
+  margin: 0 auto;
 
-.bottom-nav a:hover {
-  color: red;
-}
-
-.bottom-nav h1 {
-  font-size: 1.5rem; /* Use relative units for responsiveness */
-  margin: 0;
-}
-
-/* Center images */
-.center {
-  text-align: center;
-}
-
-.center img {
+  /* Prevent images from exceeding table block size */
   max-width: 100%;
+  max-height: 100%;
 }
 
-/* Link images */
-.link-images img {
-  margin-right: 10px; /* Adjust spacing for responsiveness */
-}
+
+.center {
+    text-align: center;
+  }
+  
+  .center img {
+    max-width: 100%;
+  }
+
+
+  .link-images img {
+    margin-right: 20px; /* Adjust spacing as needed */
+  }
