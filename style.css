@@ -123,8 +123,8 @@ body {
   text-align: center;
 
   /* Set fixed width & height for the table block */
-  width: 50px; /* Adjust as needed */
-  height: 50px; /* Adjust as needed */
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
 
   /* Optional for a table-like border and appearance */
   border: 1px solid black;
