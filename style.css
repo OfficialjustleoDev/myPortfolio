@@ -125,7 +125,8 @@ text-align: center;
 }
 
 .table-block img {
-max-width: 100%; /* Ensure images don't exceed cell width */
+  width: 200px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
 }
 
 .center {
