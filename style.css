@@ -1,83 +1,91 @@
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
+    margin: 0;
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  .top-nav {
+    background-color: black;
+    color: white;
+    padding: 10px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 5px; /* Reduced padding */
+    margin-left: auto;
+  }
+  .top-nav a:hover {
+    color: red;
+  }
+  .top-nav h1 {
+    font-size: 20px;
+    margin: 0;
+  }
 
-.top-nav {
-  background-color: black;
-  color: white;
-  padding: 10px 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
+  .main-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Margin for spacing */
+  }
+  
+  .main-image-container h2 {
+    font-size: 40px;
+    margin: 0;
+    color: #333; /* Adjust color */
+  }
+  
+  .main-image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make profile image circular */
+    margin-top: 20px; /* Space between text and image */
+  }
+  
 
-.top-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 3px 5px;
-  margin-left: auto;
-}
+  .link-images {
+    display: flex; /* Arrange link images horizontally */
+    justify-content: space-between; /* Distribute evenly */
+    margin-top: 20px; /* Space between main image and link images */
+  }
 
-.top-nav a:hover {
-  color: red;
-}
+  .link-images img {
+    width: 50px; /* Adjust link image size as needed */
+    cursor: pointer; /* Indicate they are clickable */
+    gap: 10px 10px;
+  }
 
-.top-nav h1 {
-  font-size: 20px;
-  margin: 0;
-}
+  .link:hover {
+    color: red;
+  }
 
-.main-image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 20px auto;
-}
 
-.main-image-container h2 {
-  font-size: 40px;
-  margin: 0;
-  color: #333; /* Adjust color */
-}
+  .info{
+      margin: 0;
+    display: flex; /* Make body a flex container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+    ;
+  }
 
-.main-image-container img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-top: 20px;
-}
-
-.link-images {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.link-images img {
-  width: 50px;
-  cursor: pointer;
-  gap: 10px;
-}
-
-.link-images img:hover {
-  opacity: 0.8; /* Subtle hover effect */
-}
-
-.table-block {
+  .table-block {
   border: 1px solid black;
-  padding: 20px; /* Adjust padding value */
+  padding: 150px;
   background-color: #f2f2f2;
   text-align: center;
-  transition: transform 0.5s, background-color 0.2s;
+  transition: all 0.5s;
   cursor: pointer;
+  
 }
 
 .table-block:hover {
@@ -85,36 +93,50 @@ body {
   background-color: #ddd;
 }
 
-.bottom-nav {
-  background-color: black;
-  color: white;
-  padding: 10px 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+
+  .bottom-nav {
+    background-color: black;
+    color: white;
+    padding: 10px 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+  .bottom-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 5px; /* Reduced padding */
+    margin-left: auto
+    ;
+  }
+  .top-nav a:hover {
+    color: red;
+  }
+  .top-nav h1 {
+    font-size: 20px;
+    margin: 0;
+    float: left;
+  }
+
+  .table-block {
+text-align: center;
+/* Additional styling for spacing, padding, etc. as needed */
 }
 
-.bottom-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 3px 5px;
-  margin-left: auto;
+.table-block img {
+max-width: 100%; /* Ensure images don't exceed cell width */
 }
 
-.bottom-nav a:hover {
-  color: red;
-}
+.center {
+    text-align: center;
+  }
+  
+  .center img {
+    max-width: 100%;
+  }
 
-.bottom-nav h1 {
-  font-size: 20px;
-  margin: 0;
-}
 
-.centered-image {
-  text-align: center;
-  max-width: 100%;
-}
-
-.centered-image img {
-  max-width: 100
+  .link-images img {
+    margin-right: 20px; /* Adjust spacing as needed */
+  }
