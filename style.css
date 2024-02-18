@@ -119,14 +119,35 @@ body {
     float: left;
   }
 
-  .table-block {
-text-align: center;
-/* Additional styling for spacing, padding, etc. as needed */
+.table-block {
+  text-align: center;
+
+  /* Set fixed width & height for the table block */
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+
+  /* Optional for a table-like border and appearance */
+  border: 1px solid black;
+  padding: 10px; /* Adjust padding if needed */
+
+  /* Disable text wrapping: important if content exceeds block size */
+  white-space: nowrap; /* Optional */
+  overflow: hidden; /* Optional if content exceeds block size */
+
+  /* Optional styling for hover or other effects */
+  /* ... */
 }
 
 .table-block img {
-max-width: 100%; /* Ensure images don't exceed cell width */
-}
+  /* Center images within the table block */
+  margin: 0 auto;
+
+  /* Prevent images from exceeding table block size */
+  max-width: 100%;
+  max-height: 100%;
+
+  /* Additional styling for images within the table block */
+  /* ... */
 
 .center {
     text-align: center;
