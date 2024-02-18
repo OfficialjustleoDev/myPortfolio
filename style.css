@@ -100,43 +100,6 @@ body {
   text-align: center;
   transition: transform 0.5s, background-color 0.2s;
   cursor: pointer;
-  padding: 0; /* Remove padding to allow image to fill space */
-  max-width: 80vw; /* Set a maximum width for responsiveness */
-  margin: 0 auto; /* Center horizontally */
-}
-
-.table-block img {
-  width: 100%; /* Make image fill the width of the table block */
-  height: 100%; /* Make image fill the height of the table block */
-  object-fit: cover; /* Ensure image covers the entire space */
-}
-
-.table-block:hover {
-  transform: scale(1.1);
-  background-color: #ddd;
-}
-
-/* Bottom navigation */
-.bottom-nav {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.bottom-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 3px 5px;
-  margin-left: auto;
-}
-
-.bottom-nav a:hover {
-  color: red;
-}
-
-.bottom-nav
-
+  /* Remove padding or set it to a small value */
+  padding: 5px;
+  max-width: 80vw
