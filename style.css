@@ -119,17 +119,9 @@ body {
     float: left;
   }
 
-.table-block {
-  text-align: center;
-
-  /* Set fixed width & height for the table block */
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-
-  /* Optional for a table-like border and appearance */
-  border: 1px solid black;
-  padding: 10px; /* Adjust padding if needed */
-  overflow: hidden; /* Optional if content exceeds block size */
+  .table-block {
+text-align: center;
+/* Additional styling for spacing, padding, etc. as needed */
 }
 
 .table-block img {
