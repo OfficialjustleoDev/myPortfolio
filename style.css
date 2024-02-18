@@ -67,7 +67,7 @@ body {
   width: 5vw; /* Use viewport units for responsiveness */
   height: auto; /* Maintain aspect ratio */
   cursor: pointer; /* Indicate they are clickable */
-  gap: 10px;
+ 
 }
 
 .link-images img:hover {
