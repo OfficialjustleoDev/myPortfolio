@@ -100,9 +100,15 @@ body {
   text-align: center;
   transition: transform 0.5s, background-color 0.2s;
   cursor: pointer;
-  padding: 20px; /* Adjust padding value */
+  padding: 0; /* Remove padding to allow image to fill space */
   max-width: 80vw; /* Set a maximum width for responsiveness */
   margin: 0 auto; /* Center horizontally */
+}
+
+.table-block img {
+  width: 100%; /* Make image fill the width of the table block */
+  height: 100%; /* Make image fill the height of the table block */
+  object-fit: cover; /* Ensure image covers the entire space */
 }
 
 .table-block:hover {
@@ -132,15 +138,5 @@ body {
   color: red;
 }
 
-.bottom-nav h1 {
-  font-size: 1.5rem; /* Use relative units for responsiveness */
-  margin: 0;
-}
+.bottom-nav
 
-/* Centered images */
-.center {
-  text-align: center;
-}
-
-.center img {
-  
