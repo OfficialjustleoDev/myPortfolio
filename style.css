@@ -5,29 +5,36 @@ body {
     align-items: center; /* Center content horizontally */
     min-height: 100vh; /* Ensure full viewport height */
   }
-  .top-nav {
-    background-color: black;
-    color: white;
-    padding: 10px 200px;
-    display: flex;
-    align-items: right;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .top-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 3px 5px; /* Reduced padding */
-    margin-left: auto;
-  }
-  .top-nav a:hover {
-    color: red;
-  }
-  .top-nav h1 {
-    font-size: 20px;
-    margin: 0;
-  }
+ .top-nav {
+  background-color: black;
+  color: white;
+  padding: 10px 200px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: flex-end; /* Align text to the right */
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 3px 5px; /* Adjust padding as needed */
+  letter-spacing: 0.1em; /* Eliminate spaces between letters */
+  transition: text-shadow 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.top-nav a:hover {
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5); /* Subtle hover effect */
+}
+
+.top-nav h1 {
+  font-size: 20px;
+  margin: 0;
+  /* Align to the right if desired:
+  text-align: right; */
+}
+
 
   .main-image-container {
     display: flex;
