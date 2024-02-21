@@ -86,7 +86,7 @@ body {
 
   .table-block {
   border: 1px solid black;
-  padding: 150px;
+  padding: 100px;
   background-color: #f2f2f2;
   text-align: center;
   transition: all 0.5s;
@@ -96,7 +96,7 @@ body {
 
 .table-block:hover {
   transform: scale(1.1);
-  background-color: #ddd;
+  background-color: red;
 }
 
 
